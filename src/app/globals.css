@@ -19,3 +19,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@font-face {
+  font-family: 'heading';
+  src: url('/src//app/fonts/56515b6b3a8d18de-s.p.woff2') format('woff2'), /* Modern browsers */
+}
