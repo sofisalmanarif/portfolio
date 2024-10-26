@@ -30,6 +30,11 @@ export const techStack = [
     "icon": "/docker-icon.png",
   },
   {
+    "title": "Express js",
+    "what": "Nodejs Framework",
+    "icon": "/express-js-icon.png",
+  },
+  {
     "title": "MongoDB",
     "what": "Database",
     "icon": "/mongodb-icon.png",
@@ -39,11 +44,7 @@ export const techStack = [
     "what": "Frontend Library",
     "icon": "/react-js-icon.png",
   },
-  {
-    "title": "Tailwind CSS",
-    "what": "CSS Framework",
-    "icon": "/tailwind-css-icon.png",
-  },
+ 
 ];
 
 export default function Home() {
