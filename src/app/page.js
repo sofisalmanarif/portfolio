@@ -70,7 +70,7 @@ export default function Home() {
     </section>
 
     <section className="">
-      <h2 className="title text-4xl  font-[heading]  tracking-wide">Current Technologies</h2>
+      <h2 className="title text-3xl  font-[heading]  tracking-wide">Current Technologies</h2>
       <p className="font-light mt-2 mb-6 text-zinc-400">I'm proficient in a range of modern technologies that empower me to build highly functional solutions.<br/>These are some of my main technologies.</p>
   <section className="grid grid-cols-4  gap-5">
  
