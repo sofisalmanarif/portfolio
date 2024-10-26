@@ -1,0 +1,42 @@
+export const techStack = [
+    {
+      "title": "TypeScript",
+      "what": "Superset of JavaScript",
+      "icon": "/typescript-icon.png",
+    },
+    {
+      "title": "Next.js",
+      "what": "React Framework",
+      "icon": "/nextjs-icon.png",
+    },
+    {
+      "title": "Node.js",
+      "what": "JavaScript Runtime",
+      "icon": "node-js-icon.svg",
+    },
+    {
+      "title": "Git",
+      "what": "Version Control",
+      "icon": "/git-icon.png",
+    },
+    {
+      "title": "Docker",
+      "what": "Containerization.",
+      "icon": "/docker-icon.png",
+    },
+    {
+      "title": "MongoDB",
+      "what": "Database",
+      "icon": "/mongodb-icon.png",
+    },
+    {
+      "title": "React.js",
+      "what": "Frontend Library",
+      "icon": "/react-js-icon.png",
+    },
+    {
+      "title": "Tailwind CSS",
+      "what": "Utility-First CSS Framework",
+      "icon": "/tailwind-css-icon.png",
+    },
+];
