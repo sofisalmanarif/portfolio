@@ -67,11 +67,11 @@ export const projects =[{
 },
 {
   image:"/techThreads.png",
-  title:"techThreads",
+  title:"Anonymous",
   description:"A blog platform crafted for tech enthusiasts, providing a space to explore, share, and discuss topics across JavaScript, machine learning, and web development.",
   techStack:["Nextjs","shadcn ui","TypeScript","NextAuth","expressjs"],
-  source:"https://github.com/sofisalmanarif/blog-website",
-  website:"https://blog-website-rho-eight.vercel.app/"
+  source:"https://github.com/sofisalmanarif/anonymous",
+  // website:"https://blog-website-rho-eight.vercel.app/"
 
 },
 
@@ -80,7 +80,7 @@ export const projects =[{
 export default function Home() {
   return (
     <main className="container text-balance  w-full flex-wrap flex mx-auto max-w-[900px]">
-      <section className="flex py-8 flex-wrap-reverse  items-center w-full justify-between  ">
+      <section className="flex header py-8 flex-wrap-reverse  items-center w-full justify-between  ">
         <div className="">
           <h1 className="title text-5xl font-[heading] tracking-wide">
             hi Salman here 👋
@@ -205,7 +205,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-8 ">
+      <section className=" technologies py-8 ">
         <h2 className="title text-3xl  font-[heading]  tracking-wide">
           Current Technologies
           {/* <button className="btn">Normal</button> */}
@@ -224,7 +224,7 @@ export default function Home() {
         </section>
       </section>
 
-      <section className="py-8 flex pb-8 flex-col gap-6">
+      <section className="projects py-8 flex pb-8 flex-col gap-6">
         <div className="flex w-full items-center justify-between">
           <h2 className="title  inline text-3xl  font-[heading]  tracking-wide">
             Featured Projects

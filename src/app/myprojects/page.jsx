@@ -21,12 +21,12 @@ export const projects =[{
 
 },
 {
-  image:"/techThreads.png",
-  title:"techThreads",
+  image:"/testimonials.png",
+  title:"Testimonials.io",
   description:"A blog platform crafted for tech enthusiasts, providing a space to explore, share, and discuss topics across JavaScript, machine learning, and web development.",
   techStack:["Nextjs","shadcn ui","TypeScript","NextAuth","expressjs"],
-  source:"https://github.com/sofisalmanarif/blog-website",
-  website:"https://blog-website-rho-eight.vercel.app/"
+  source:"https://github.com/sofisalmanarif/anonymous",
+  // website:""
 
 },
 

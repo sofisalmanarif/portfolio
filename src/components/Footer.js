@@ -85,10 +85,10 @@ const Footer = () => {
         <p class="text-center text-xs text-muted-foreground">
           <span>© 2024</span>{" "}
           <a class="" href="/">
-            tedawf.com
+            salman
           </a>{" "}
           |{" "}
-          <a class=" font-bold" href="/privacy">
+          <a class=" font-bold" href="/">
             privacy?
           </a>
         </p>

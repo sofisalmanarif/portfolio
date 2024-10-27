@@ -48,7 +48,7 @@ const ProjectsCard = ({project}) => {
 
 
         </Link>}
-        {project.source &&
+        {project.website &&
         <Link
           target="_blank"
           href={project.website}
