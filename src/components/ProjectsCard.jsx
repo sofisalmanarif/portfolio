@@ -6,31 +6,31 @@ const ProjectsCard = ({project}) => {
   return (
     <div class="rounded-xl border border-zinc-800 bg-card text-card-foreground shadow flex flex-col">
     <div class="flex flex-col space-y-1.5 p-6">
-      <a href="/tv-tele-alerts.png">
-      <Image width={500} height={300} src={project.image}/>
-      </a>
+      <Link target='_blank' href={project.website || project.source}>
+      <Image width={400} height={200} src={project.image}/>
+      </Link>
     </div>
     <div class="p-6 pt-0 flex flex-col gap-2">
       <h3 class="font-semibold leading-none tracking-tight">
         {project.title}
       </h3>
       <div class="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-        <p>
+        <p className='text-justify text-zinc-400'>
           {project.description}
         </p>
       </div>
     </div>
     <div class="p-6 pt-0 flex h-full flex-col items-start justify-between gap-4">
       
-    <div className='flex gap-2'>{project.techStack.map(stack=><button className="btn btn-xs rounded-sm">{stack}</button>)}</div>
-      <div class="flex flex-row flex-wrap items-start gap-1">
+    <div className='flex flex-wrap gap-2'>{project.techStack.map(stack=><button className="btn bg-zinc-500 text-white btn-primary btn-xs brightness-50 rounded-md">{stack}</button>)}</div>
+      <div class="flex flex-row flex-wrap items-start gap-2">
 
 
       {project.source && <Link
           target="_blank"
           href={project.source}
         >
-          <button className="btn btn-sm rounded-md btn-active btn-neutral"><svg
+          <button className="btn btn-sm rounded-md btn-secondary btn-neutral"><svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -53,7 +53,7 @@ const ProjectsCard = ({project}) => {
           target="_blank"
           href={project.website}
         >
-          <button className="btn btn-sm rounded-md btn-active btn-neutral">
+          <button className="btn btn-sm  rounded-md btn-primary btn-neutral">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe size-3"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
             Website</button>
 

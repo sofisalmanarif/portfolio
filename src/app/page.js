@@ -50,8 +50,8 @@ export const techStack = [
 export const projects =[{
   image:"/cure-cart.png",
   title:"Cure Cart",
-  description:"sdjhfegdbhdh",
-  techStack:["React","mongoDb","expressjs"],
+  description:"Cure Cart is an accessible e-pharmacy platform that simplifies online medication purchases, allowing users to upload prescriptions, track order statuses, and enjoy a seamless experience for all their healthcare needs.",
+  techStack:["React","mongoDb","expressjs","javaScript","stripe","tailwind css"],
   source:"https://github.com/sofisalmanarif/Cure-Cart",
   website:"https://curecart.vercel.app/"
 
@@ -59,8 +59,17 @@ export const projects =[{
 {
   image:"/techThreads.png",
   title:"techThreads",
-  description:"sdjhfegdbhdh",
-  techStack:["Nextjs","shadcn ui","expressjs"],
+  description:"A blog platform crafted for tech enthusiasts, providing a space to explore, share, and discuss topics across JavaScript, machine learning, and web development.",
+  techStack:["Nextjs","shadcn ui","TypeScript","NextAuth","expressjs"],
+  source:"https://github.com/sofisalmanarif/blog-website",
+  website:"https://blog-website-rho-eight.vercel.app/"
+
+},
+{
+  image:"/techThreads.png",
+  title:"techThreads",
+  description:"A blog platform crafted for tech enthusiasts, providing a space to explore, share, and discuss topics across JavaScript, machine learning, and web development.",
+  techStack:["Nextjs","shadcn ui","TypeScript","NextAuth","expressjs"],
   source:"https://github.com/sofisalmanarif/blog-website",
   website:"https://blog-website-rho-eight.vercel.app/"
 
@@ -224,7 +233,14 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {
-            projects.map((project)=><ProjectsCard project={project}/>
+            projects.map((project,idx)=>
+            {
+              if(idx>1){
+                return
+              }
+              return <ProjectsCard project={project}/>
+            }
+
             )
           }
         </div>
