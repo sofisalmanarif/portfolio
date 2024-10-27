@@ -21,6 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html data-theme="black" lang="en">
+      <head ></head>
       <body
         className={`container mx-auto max-w-[900px] bg-black ${geistSans.variable} ${geistMono.variable} antialiased`}
       ><Navbar/>

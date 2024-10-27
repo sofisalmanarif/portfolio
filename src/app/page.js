@@ -47,6 +47,26 @@ export const techStack = [
     icon: "/react-js-icon.png",
   },
 ];
+export const projects =[{
+  image:"/cure-cart.png",
+  title:"Cure Cart",
+  description:"sdjhfegdbhdh",
+  techStack:["React","mongoDb","expressjs"],
+  source:"https://github.com/sofisalmanarif/Cure-Cart",
+  website:"https://curecart.vercel.app/"
+
+},
+{
+  image:"/techThreads.png",
+  title:"techThreads",
+  description:"sdjhfegdbhdh",
+  techStack:["Nextjs","shadcn ui","expressjs"],
+  source:"https://github.com/sofisalmanarif/blog-website",
+  website:"https://blog-website-rho-eight.vercel.app/"
+
+},
+
+]
 
 export default function Home() {
   return (
@@ -203,8 +223,10 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <ProjectsCard/>
-          <ProjectsCard/>
+          {
+            projects.map((project)=><ProjectsCard project={project}/>
+            )
+          }
         </div>
       </section>
     </main>
