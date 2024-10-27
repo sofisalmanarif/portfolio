@@ -1,6 +1,7 @@
 import ProjectsCard from "@/components/ProjectsCard";
 import TechCard from "@/components/TechCard";
 import Image from "next/image";
+import Link from "next/link";
 
 // import {techStack} from "../data.json"
 
@@ -63,9 +64,9 @@ export default function Home() {
             <br /> advice from my cat, Luffy.
           </p>
           <section className="mt-10 flex items-center justify-start gap-10">
-            <button className="inline-flex hover:bg-zinc-800 items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2">
-              <span class="font-semibold">Resume</span>
-              <svg
+          <Link  href={"/my.jpeg"}>
+          <button className="btn   rounded-md btn-primary">Resume  
+            <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -81,8 +82,9 @@ export default function Home() {
                 <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
                 <path d="M12 18v-6"></path>
                 <path d="m9 15 3 3 3-3"></path>
-              </svg>
-            </button>
+              </svg></button>
+          </Link>
+           
 
             <div class="flex gap-6 text-zinc-400">
               <a
@@ -177,6 +179,8 @@ export default function Home() {
       <section className="py-8 ">
         <h2 className="title text-3xl  font-[heading]  tracking-wide">
           Current Technologies
+          {/* <button className="btn">Normal</button> */}
+
         </h2>
         <p className="font-light  mt-2 mb-6 text-zinc-400">
           I'm proficient in a range of modern technologies that empower me to
