@@ -9,8 +9,8 @@ const TechCard = ({data}) => {
             <Image width={30} height={40} src={data.icon}/>
         </div>
         <div>
-            <h6 className='text-md font-semibold'>{data.title}</h6>
-            <p className='text-[12px] tracking-wider'>{data.what}</p>
+            <h6 className='text-md font-semibold font-[navfont]'>{data.title}</h6>
+            <p className='text-[12px] text-zinc-400 tracking-wider'>{data.what}</p>
         </div>
     </div>
   )

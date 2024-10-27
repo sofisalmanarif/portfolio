@@ -224,11 +224,12 @@ export default function Home() {
         </section>
       </section>
 
-      <section className="py-8 flex flex-col gap-6">
-        <div className="felx items-center justify-between">
-          <h2 className="title text-3xl  font-[heading]  tracking-wide">
+      <section className="py-8 flex pb-8 flex-col gap-6">
+        <div className="flex w-full items-center justify-between">
+          <h2 className="title  inline text-3xl  font-[heading]  tracking-wide">
             Featured Projects
           </h2>
+          <Link class=" text-zinc-500  flex items-center gap-2 font-light" href="/myprojects"><span>view more</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right size-5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></Link>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
