@@ -1,19 +1,41 @@
 'use client'
+import Toast from "@/components/Toast";
 import React, { useState } from "react";
 
 const Page = () => {
   const [name,setName] = useState("")
   const [email,setEmail] = useState("")
   const [message,setMessage] = useState("")
+  const [showToast,setShowToast] = useState(false)
+  const [loading,setLoading] = useState(false)
 
   const submitHandler =async(e)=>{
     e.preventDefault()
     console.log(name,email,message)
-    fetch("/api/sendemail")
+    setLoading(true)
+    const res = await fetch("/api/sendemail",{
+      method:"POST",
+      headers: {
+        
+        'Content-Type': 'application/json',
+    },
+      body:JSON.stringify({name,email,message})
+    })
+
+    const parsedDAta = await res.json()
+    setLoading(false)
+    setShowToast(true);  // Show toast
+
+    setTimeout(() => setShowToast(false), 3000);
+
+    setEmail("")
+    setName("")
+    setMessage("")
 
   }
   return (
     <section className="py-8  flex flex-col gap-6">
+      {showToast && <Toast/>}
       <div className="felx items-center justify-between">
         <h2 className="title text-5xl  font-[heading]  tracking-wide">
           Contact me.
@@ -46,8 +68,7 @@ const Page = () => {
           </div>
 
           <button type="submit" className="btn rounded-lg btn-neutral">
-            Send Message{" "}
-            <svg
+            {loading?"Sending...":<>Send Message <svg
               width="15"
               height="15"
               viewBox="0 0 15 15"
@@ -61,7 +82,9 @@ const Page = () => {
                 fill-rule="evenodd"
                 clip-rule="evenodd"
               ></path>
-            </svg>
+            </svg></>
+           
+            }
           </button>
           <p class="mt-4 text-xs text-muted-foreground">By submitting this form, I agree to the <a class=" font-semibold" href="/contact">privacy&nbsp;policy.</a></p>
         </form>
