@@ -4,10 +4,10 @@ import React from 'react'
 
 const ProjectsCard = ({project}) => {
   return (
-    <div class="rounded-xl border border-zinc-800 bg-card text-card-foreground shadow flex flex-col">
+    <div class="rounded-xl w-full border  border-zinc-800 bg-card text-card-foreground shadow flex flex-col">
     <div class="flex flex-col space-y-1.5 p-6">
       <Link target='_blank' href={project.website || project.source}>
-      <Image width={400} height={200}  alt='project image' src={project.image}/>
+      <Image width={500} height={200}  alt='project image' src={project.image}/>
       </Link>
     </div>
     <div class="p-6 pt-0 flex flex-col gap-2">

@@ -41,7 +41,7 @@ const Page = () => {
 
   }
   return (
-    <section className="py-8  flex flex-col gap-6">
+    <section className="py-8 min-h-[70vh] flex flex-col gap-6">
       {showToast && <Toast/>}
       
       <div className="felx items-center justify-between">

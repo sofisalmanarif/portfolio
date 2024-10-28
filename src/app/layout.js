@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       <head ></head>
       <SmoothScrolling>
       <body
-        className={`container mx-auto max-w-[900px] bg-black ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`container px-4 mx-auto max-w-[900px] bg-black ${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           <Navbar/>
         {children}

@@ -1,96 +1,27 @@
 import ProjectsCard from "@/components/ProjectsCard";
 import TechCard from "@/components/TechCard";
+import { projects, techStack } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
 
 // import {techStack} from "../data.json"
 
-export const techStack = [
-  {
-    title: "TypeScript",
-    what: "Superset of JavaScript",
-    icon: "/typescript-icon.png",
-  },
-  {
-    title: "Next.js",
-    what: "React Framework",
-    icon: "/nextjs-icon.png",
-  },
-  {
-    title: "Node.js",
-    what: "JavaScript Runtime",
-    icon: "node-js-icon.svg",
-  },
-  {
-    title: "Git",
-    what: "Version Control",
-    icon: "/git-icon.png",
-  },
-  {
-    title: "Docker",
-    what: "Containerization.",
-    icon: "/docker-icon.png",
-  },
-  {
-    title: "Express js",
-    what: "Nodejs Framework",
-    icon: "/express-js-icon.png",
-  },
-  {
-    title: "MongoDB",
-    what: "Database",
-    icon: "/mongodb-icon.png",
-  },
-  {
-    title: "React.js",
-    what: "Frontend Library",
-    icon: "/react-js-icon.png",
-  },
-];
-export const projects =[{
-  image:"/cure-cart.png",
-  title:"Cure Cart",
-  description:"Cure Cart is an accessible e-pharmacy platform that simplifies online medication purchases, allowing users to upload prescriptions, track order statuses, and enjoy a seamless experience for all their healthcare needs.",
-  techStack:["React","mongoDb","expressjs","javaScript","stripe","tailwind css"],
-  source:"https://github.com/sofisalmanarif/Cure-Cart",
-  website:"https://curecart.vercel.app/"
 
-},
-{
-  image:"/techThreads.png",
-  title:"techThreads",
-  description:"A blog platform crafted for tech enthusiasts, providing a space to explore, share, and discuss topics across JavaScript, machine learning, and web development.",
-  techStack:["Nextjs","shadcn ui","TypeScript","NextAuth","expressjs"],
-  source:"https://github.com/sofisalmanarif/blog-website",
-  website:"https://blog-website-rho-eight.vercel.app/"
 
-},
-{
-  image:"/techThreads.png",
-  title:"Anonymous",
-  description:"A blog platform crafted for tech enthusiasts, providing a space to explore, share, and discuss topics across JavaScript, machine learning, and web development.",
-  techStack:["Nextjs","shadcn ui","TypeScript","NextAuth","expressjs"],
-  source:"https://github.com/sofisalmanarif/anonymous",
-  // website:"https://blog-website-rho-eight.vercel.app/"
-
-},
-
-]
 
 export default function Home() {
   return (
-    <main className="container text-balance  w-full flex-wrap flex mx-auto max-w-[900px]">
-      <section className="flex header py-8 flex-wrap-reverse  items-center w-full justify-between  ">
-        <div className="">
-          <h1 className="title text-5xl font-[heading] tracking-wide">
+    <main className="container px-2 w-full flex-wrap flex  mx-auto max-w-[900px]">
+      <section className="flex header py-8 flex-wrap-reverse  justify-center items-center w-full   ">
+        <div className="flex flex-col ">
+          <h1 className="title text-4xl sm:text-5xl mt-8 font-[heading] tracking-wide">
             hi Salman here 👋
           </h1>
           <p className="font-light mt-4 text-zinc-400">
             20-year-old software developer from India 🇮🇳
           </p>
-          <p className="font-light mt-4  text-zinc-400">
-            I like to develop full-stack, drink instant coffee and get coding
-            <br /> advice from my cat, Luffy.
+          <p className="font-light mt-4 sm:w-[70%] text-zinc-400">
+            I like to develop full-stack, drink instant coffee and get coding advice from my cat, Luffy.
           </p>
           <section className="mt-10 flex items-center justify-start gap-10">
           <Link  href={"/my.jpeg"}>
@@ -117,7 +48,7 @@ export default function Home() {
 
             <div class="flex gap-6 text-zinc-400">
               <a
-                href="https://linkedin.com/in/tedawf"
+                href="https://www.linkedin.com/in/sofi-salman-73a0b8249/"
                 target="_blank"
                 class="text-muted-foreground hover:text-foreground"
                 rel="noopener noreferrer"
@@ -143,7 +74,7 @@ export default function Home() {
                 </svg>
               </a>
               <a
-                href="https://github.com/sofisalmanaeif"
+                href="https://github.com/sofisalmanarif"
                 target="_blank"
                 class="text-muted-foreground hover:text-foreground"
                 rel="noopener noreferrer"
@@ -168,7 +99,7 @@ export default function Home() {
                 </svg>
               </a>
               <a
-                href="mailto:hello@tedawf.com"
+                href="mailto:sofisalman9906@gmail.com"
                 target="_blank"
                 class="text-muted-foreground hover:text-foreground"
                 rel="noopener noreferrer"
@@ -207,7 +138,7 @@ export default function Home() {
       </section>
 
       <section className=" technologies py-8 ">
-        <h2 className="title text-3xl  font-[heading]  tracking-wide">
+        <h2 className="title text-2xl sm:text-3xl  font-[heading]  tracking-wide">
           Current Technologies
           
 
@@ -225,15 +156,15 @@ export default function Home() {
         </section>
       </section>
 
-      <section className="projects py-8 flex pb-8 flex-col gap-6">
+      <section className="projects py-8 mx-auto flex pb-8 flex-col gap-6">
         <div className="flex w-full items-center justify-between">
-          <h2 className="title  inline text-3xl  font-[heading]  tracking-wide">
+          <h2 className="title  inline text-2xl sm:text-3xl  font-[heading]  tracking-wide">
             Featured Projects
           </h2>
           <Link class=" text-zinc-500  flex items-center gap-2 font-light" href="/myprojects"><span>view more</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-arrow-right size-5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {
             projects.map((project,idx)=>
             {

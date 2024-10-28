@@ -3,10 +3,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col pt-8 items-center justify-center pb-32 mt-4 sm:flex-row-reverse sm:justify-between">
+    <footer className="flex flex-col pt-8 items-center justify-center pb-20 mt-4 sm:flex-row-reverse sm:justify-between">
       <section className="flex gap-6">
         <a
-          href="https://linkedin.com/in/tedawf"
+          href="https://www.linkedin.com/in/sofi-salman-73a0b8249/"
           target="_blank"
           className="text-muted-foreground hover:text-foreground"
           rel="noopener noreferrer"
