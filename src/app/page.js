@@ -201,6 +201,7 @@ export default function Home() {
             height={200}
             className="rounded-xl  "
             src={"/my.jpeg"}
+            alt="profile"
           />
         </div>
       </section>
@@ -212,7 +213,7 @@ export default function Home() {
 
         </h2>
         <p className="font-light  mt-2 mb-6 text-zinc-400">
-          I'm proficient in a range of modern technologies that empower me to
+          I&apos;m proficient in a range of modern technologies that empower me to
           build highly functional solutions.
           <br />
           These are some of my main technologies.

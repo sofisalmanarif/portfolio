@@ -43,7 +43,7 @@ const Page = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {
             projects.map((project,idx)=>
-            <ProjectsCard project={project}/>
+            <ProjectsCard key={idx} project={project}/>
             
 
             )
