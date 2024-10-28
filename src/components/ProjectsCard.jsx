@@ -22,7 +22,7 @@ const ProjectsCard = ({project}) => {
     </div>
     <div class="p-6 pt-0 flex h-full flex-col items-start justify-between gap-4">
       
-    <div className='flex flex-wrap gap-2'>{project.techStack.map(stack=><button className="btn backdrop-brightness-50 bg-zinc-800 text-white btn-primary btn-xs brightness-50 rounded-md">{stack}</button>)}</div>
+    <div className='flex flex-wrap gap-2'>{project.techStack.map((stack,idx)=><button key={idx} className="btn backdrop-brightness-50 bg-zinc-800 text-white btn-primary btn-xs brightness-50 rounded-md">{stack}</button>)}</div>
       <div class="flex flex-row flex-wrap items-start gap-2">
 
 

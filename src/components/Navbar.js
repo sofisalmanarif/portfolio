@@ -10,7 +10,7 @@ const Navbar = () => {
                 <li><Link href={"/myprojects"}>projects</Link></li>
                 <li><Link href={"/contactme"}>contact</Link></li>
             </ul>
-            <span>mode</span>
+            <span></span>
         </nav>
     </header>
   )

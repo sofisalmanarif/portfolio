@@ -22,16 +22,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-      <SmoothScrolling>
     <html data-theme="black" lang="en">
       <head ></head>
+      <SmoothScrolling>
       <body
         className={`container mx-auto max-w-[900px] bg-black ${geistSans.variable} ${geistMono.variable} antialiased`}
-      ><Navbar/>
+        >
+          <Navbar/>
         {children}
         <Footer/>
       </body>
-    </html>
       </SmoothScrolling>
+    </html>
   );
 }

@@ -102,9 +102,9 @@ export default function Home() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 class="lucide lucide-file-down ml-2 size-5"
               >
                 <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
@@ -131,9 +131,9 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   class="lucide lucide-linkedin size-5"
                   aria-hidden="true"
                 >
@@ -157,9 +157,9 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   class="lucide lucide-github size-5"
                   aria-hidden="true"
                 >
@@ -182,9 +182,9 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   class="lucide lucide-mail size-5"
                   aria-hidden="true"
                 >
@@ -208,7 +208,7 @@ export default function Home() {
       <section className=" technologies py-8 ">
         <h2 className="title text-3xl  font-[heading]  tracking-wide">
           Current Technologies
-          {/* <button className="btn">Normal</button> */}
+          
 
         </h2>
         <p className="font-light  mt-2 mb-6 text-zinc-400">
@@ -219,7 +219,7 @@ export default function Home() {
         </p>
         <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4  gap-5">
           {techStack.map((elem) => (
-            <TechCard data={elem} />
+            <TechCard key={elem.title} data={elem} />
           ))}
         </section>
       </section>
@@ -229,7 +229,7 @@ export default function Home() {
           <h2 className="title  inline text-3xl  font-[heading]  tracking-wide">
             Featured Projects
           </h2>
-          <Link class=" text-zinc-500  flex items-center gap-2 font-light" href="/myprojects"><span>view more</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right size-5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></Link>
+          <Link class=" text-zinc-500  flex items-center gap-2 font-light" href="/myprojects"><span>view more</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-arrow-right size-5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></Link>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -239,7 +239,7 @@ export default function Home() {
               if(idx>1){
                 return
               }
-              return <ProjectsCard project={project}/>
+              return <ProjectsCard key={idx} project={project}/>
             }
 
             )

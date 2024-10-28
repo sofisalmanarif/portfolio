@@ -7,6 +7,7 @@ const Page = () => {
   const [email,setEmail] = useState("")
   const [message,setMessage] = useState("")
   const [showToast,setShowToast] = useState(false)
+  const [isError,setIsError] = useState(false)
   const [loading,setLoading] = useState(false)
 
   const submitHandler =async(e)=>{
@@ -24,9 +25,15 @@ const Page = () => {
 
     const parsedDAta = await res.json()
     setLoading(false)
-    setShowToast(true);  // Show toast
+    if(parsedDAta?.data){
+      setShowToast(true);  // Show toast
 
     setTimeout(() => setShowToast(false), 3000);
+    }
+    else{
+      setIsError(true)
+      alert("Message Sent Failed")
+    }
 
     setEmail("")
     setName("")
@@ -36,6 +43,7 @@ const Page = () => {
   return (
     <section className="py-8  flex flex-col gap-6">
       {showToast && <Toast/>}
+      
       <div className="felx items-center justify-between">
         <h2 className="title text-5xl  font-[heading]  tracking-wide">
           Contact me.

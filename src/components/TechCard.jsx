@@ -6,7 +6,7 @@ const TechCard = ({data}) => {
   return (
     <div className='flex gap-[12px] w-[215px]  bg-zinc-900/90 backdrop-blur-sm rounded-md items-center px-2 py-2 '>
         <div className='h-[50px] flex items-center justify-center w-[50px]  bg-zinc-700/90 p-1 rounded-md '   >
-            <Image width={30} height={40} src={data.icon}/>
+            <Image width={30} height={40} alt='image' src={data.icon}/>
         </div>
         <div>
             <h6 className='text-md font-semibold font-[navfont]'>{data.title}</h6>
