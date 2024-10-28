@@ -1,28 +1,45 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 
 const Page = () => {
+  const [name,setName] = useState("")
+  const [email,setEmail] = useState("")
+  const [message,setMessage] = useState("")
+
+  const submitHandler =async(e)=>{
+    e.preventDefault()
+    console.log(name,email,message)
+    fetch("/api/sendemail")
+
+  }
   return (
     <section className="py-8  flex flex-col gap-6">
       <div className="felx items-center justify-between">
         <h2 className="title text-5xl  font-[heading]  tracking-wide">
           Contact me.
         </h2>
-        <form action="" className="flex flex-col gap-4 mt-5">
+        <form action="" onSubmit={submitHandler} className="flex flex-col gap-4 mt-5">
           <div className="grid grid-cols-2 space-x-4">
             <input
               type="text"
               placeholder="Name"
+              value={name}
+              onChange={e=>setName(e.target.value)}
               className="input rounded-lg input-bordered w-full "
             />
 
             <input
               type="text"
               placeholder="Email"
+              value={email}
+              onChange={e=>setEmail(e.target.value)}
               className="input rounded-lg input-bordered w-ful"
             />
           </div>
           <div>
             <textarea
+            value={message}
+            onChange={e=>setMessage(e.target.value)}
               className="textarea h-24 w-full rounded-lg textarea-bordered"
               placeholder="Leave feedback about the site, career opportunities or just to say hello etc."
             ></textarea>
