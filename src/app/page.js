@@ -24,7 +24,7 @@ export default function Home() {
             I like to develop full-stack, drink instant coffee and get coding advice from my cat, Luffy.
           </p>
           <section className="mt-10 flex items-center justify-start gap-10">
-          <Link  href={"/my.jpeg"}>
+          <Link  target="_blank" href={"/Salman-Arif.pdf"}>
           <button className="btn   rounded-md btn-primary">Resume  
             <svg
                 xmlns="http://www.w3.org/2000/svg"
