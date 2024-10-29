@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import SmoothScrolling from "@/components/SmoothScrolling";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html data-theme="black" lang="en">
       <head ></head>
-      <SmoothScrolling>
+      
       <body
         className={`container px-4 mx-auto max-w-[900px] bg-black ${geistSans.variable} ${geistMono.variable} antialiased`}
         >
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer/>
       </body>
-      </SmoothScrolling>
+    
     </html>
   );
 }
