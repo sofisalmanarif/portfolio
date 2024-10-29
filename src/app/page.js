@@ -23,6 +23,7 @@ export default function Home() {
           <p className="font-light mt-4 sm:w-[70%] text-zinc-400">
             I like to develop full-stack, drink instant coffee and get coding advice from my cat, Luffy.
           </p>
+          <div class="mt-4 flex items-end gap-1"><p class="font-semibold">Ask the chatbot anything about me</p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-right size-5 animate-bounce"><path d="m7 7 10 10"></path><path d="M17 7v10H7"></path></svg></div>
           <section className="mt-10 flex items-center justify-start gap-10">
           <Link  target="_blank" href={"/Salman-Arif.pdf"}>
           <button className="btn   rounded-md btn-primary">Resume  
@@ -149,7 +150,7 @@ export default function Home() {
           <br />
           These are some of my main technologies.
         </p>
-        <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4  gap-5">
+        <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-4">
           {techStack.map((elem) => (
             <TechCard key={elem.title} data={elem} />
           ))}
