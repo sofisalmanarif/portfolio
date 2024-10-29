@@ -12,9 +12,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="container px-2 w-full flex-wrap flex  mx-auto max-w-[900px]">
-      <section className="flex header py-8 flex-wrap-reverse  justify-center items-center w-full   ">
+      <section className="flex header py-8 flex-wrap-reverse  w-full   ">
         <div className="flex flex-col ">
-          <h1 className="title text-4xl sm:text-5xl mt-8 font-[heading] tracking-wide">
+          <h1 className="title text-[40px] sm:text-5xl mt-8 font-[heading] tracking-wide">
             hi Salman here 👋
           </h1>
           <p className="font-light mt-4 text-zinc-400">
