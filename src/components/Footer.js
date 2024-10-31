@@ -90,7 +90,7 @@ const Footer = () => {
             salman
           </Link>{" "}
           |{" "}
-          <Link className=" font-bold" href="/">
+          <Link className=" font-bold" href="/privacy">
             privacy?
           </Link>
         </p>

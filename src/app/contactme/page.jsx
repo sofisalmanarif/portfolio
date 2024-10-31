@@ -1,5 +1,6 @@
 'use client'
 import Toast from "@/components/Toast";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Page = () => {
@@ -94,7 +95,7 @@ const Page = () => {
            
             }
           </button>
-          <p class="mt-4 text-xs text-muted-foreground">By submitting this form, I agree to the <a class=" font-semibold" href="/contact">privacy&nbsp;policy.</a></p>
+          <p class="mt-4 text-xs text-muted-foreground">By submitting this form, I agree to the <Link class=" font-semibold" href="/privacy">privacy&nbsp;policy.</Link></p>
         </form>
       </div>
     </section>
