@@ -52,7 +52,7 @@ const page = () => {
             real—no system is foolproof. While I&apos;ll take reasonable steps to
             protect your info, I can&apos;t promise 100% security.
           </p>
-          <h2 className="title font-[heading]  ">Policy Updates (No Surprises)</h2>
+          <h2 className="title font-[heading] text-3xl ">Policy Updates (No Surprises)</h2>
           <p className="text-zinc-400">
             This policy is current as of <b>Oct 2024</b>. If I make any changes,
             I&apos;ll update it here, so you&apos;re always in the loop. Feel free to

@@ -12,16 +12,16 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="container px-2 w-full flex-wrap flex  mx-auto max-w-[900px]">
-      <section className="flex header py-8 flex-wrap-reverse  w-full   ">
-        <div className="flex flex-col ">
-          <h1 className="title text-[40px] sm:text-5xl mt-8 font-[heading] tracking-wide">
+      <section className="flex header py-8 flex-wrap-reverse items-center justify-between w-full   ">
+        <div className="flex w-[100%] sm:w-[60%] flex-col ">
+          <h1 className="title text-[40px] sm:text-5xl mt-8 font-[heading] tracking-tight sm:tracking-wide">
             hi Salman here 👋
           </h1>
           <p className="font-light mt-4 text-zinc-400">
             20-year-old software developer from India 🇮🇳
           </p>
-          <p className="font-light mt-4 sm:w-[70%] text-zinc-400">
-            I like to develop full-stack, drink instant coffee and get coding advice from my cat, Luffy.
+          <p className="font-light mt-4  text-zinc-400">
+          I&apos;m a <span className="hover:text-white font-semibold ease-in-out duration-500 cursor-pointer">full-stack developer </span>who turns caffeine into code and solves problems <span className="hover:text-white font-semibold ease-in-out duration-500 cursor-pointer">one line at a time!</span>
           </p>
           <div class="mt-4 flex items-end gap-1"><p class="font-semibold">Ask the chatbot anything about me</p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-right size-5 animate-bounce"><path d="m7 7 10 10"></path><path d="M17 7v10H7"></path></svg></div>
           <section className="mt-10 flex items-center justify-start gap-10">
