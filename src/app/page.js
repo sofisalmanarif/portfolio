@@ -1,5 +1,6 @@
 import ProjectsCard from "@/components/ProjectsCard";
 import TechCard from "@/components/TechCard";
+import { Button } from "@/components/ui/button";
 import { projects, techStack } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,10 +24,11 @@ export default function Home() {
           <p className="font-light mt-4  text-zinc-400">
           I&apos;m a <span className="hover:text-white font-semibold ease-in-out duration-500 cursor-pointer">full-stack developer </span>who turns caffeine into code and solves problems <span className="hover:text-white font-semibold ease-in-out duration-500 cursor-pointer">one line at a time!</span>
           </p>
+         
           <div className="mt-4 flex items-end gap-1"><p className="font-semibold">Ask the chatbot anything about me</p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-arrow-down-right size-5 animate-bounce"><path d="m7 7 10 10"></path><path d="M17 7v10H7"></path></svg></div>
           <section className="mt-10 flex items-center justify-start gap-10">
           <Link  target="_blank" href={"/Salman-Arif.pdf"}>
-          <button className="btn   rounded-md btn-primary">Resume  
+          <Button variant="outline" >Resume  
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -43,7 +45,7 @@ export default function Home() {
                 <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
                 <path d="M12 18v-6"></path>
                 <path d="m9 15 3 3 3-3"></path>
-              </svg></button>
+              </svg></Button>
           </Link>
            
 

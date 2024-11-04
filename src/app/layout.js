@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from "next/script"; // Import Script component from next/script
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,16 +28,23 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html data-theme="black" lang="en">
+    <html  lang="en">
       <head></head>
 
       <body
-        className={`container px-4 mx-auto max-w-[900px] bg-black ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`container px-4 mx-auto max-w-[900px]  ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+         <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
         <Navbar />
         {children}
         <Footer />
 
+          </ThemeProvider>
         {/* Embed chatbot config */}
         <Script id="chatbot-config" strategy="afterInteractive">
           {`
