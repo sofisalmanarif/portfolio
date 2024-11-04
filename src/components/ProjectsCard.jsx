@@ -5,7 +5,7 @@ import { Button } from './ui/button'
 
 const ProjectsCard = ({project}) => {
   return (
-    <div className="rounded-xl w-full border border-zinc-200  dark:border-zinc-800 bg-card text-card-foreground shadow flex flex-col">
+    <div className="rounded-xl w-full border border-zinc-200  dark:bg-[#030712] dark:border-zinc-800 bg-card text-card-foreground shadow flex flex-col">
     <div className="flex flex-col space-y-1.5 p-6">
       <Link target='_blank' href={project.website || project.source}>
       <Image width={500} height={200}  alt='project image' src={project.image}/>

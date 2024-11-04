@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       <head></head>
 
       <body
-        className={`container px-4 mx-auto max-w-[900px]  ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`container px-4 mx-auto max-w-[900px] dark:bg-[#030712]  ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
          <ThemeProvider
             attribute="class"
