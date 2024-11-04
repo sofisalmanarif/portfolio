@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
 
-  // Determine the icon based on the current theme
   const isLightTheme = theme === "light";
 
   return (
