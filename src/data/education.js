@@ -25,10 +25,10 @@ export const myEducaton=[{
 export const work=[
     {
         duration:"Aug 2024",
-        name:"Fresher",
+        name:"Fullstack Developer",
         description:"Open To Work",
         keys:["Currently looking for a job in the field of Web Development"],
-        icon:"/my.jpeg",
+        icon:"/s.webp",
         websiteLink:"/"
     }
 ]

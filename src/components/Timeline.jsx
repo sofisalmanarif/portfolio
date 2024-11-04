@@ -6,12 +6,12 @@ import { Button } from './ui/button'
 const Timeline = ({item}) => {
   return (
     <div className="flex w-full  sm:gap-6 gap-4">
-                <Link href={"https://nielit.gov.in/srinagar/index.php"} className="rounded-full bg-blue-300 z-10  h-14 w-14 flex items-center justify-center sm:h-14 sm:w-14 border border-zinc-200 ">
-                  <Image height={56} width={56}  className="rounded-full object-cover" src={item.icon}></Image>
+                <Link href={"https://nielit.gov.in/srinagar/index.php"} className="rounded-full z-20  h-14 w-14 flex items-center justify-center sm:h-14 sm:w-14 border border-zinc-200 ">
+                  <Image height={56} width={56}  className="rounded-full dark:backdrop-invert-0 object-cover" src={item.icon}></Image>
                   </Link>
                   <div className="flex w-[80%]  flex-col gap-1">
                 <time class="text-xs text-muted-foreground"><span>{item.duration}</span></time>
-                  <h3>{item.name}</h3>
+                  <h3 className='font-semibold  tracking-tight'>{item.name}</h3>
                   <p className="text-sm text-muted-foreground">{item.description}</p>
                   <ul class="ml-4 list-outside list-disc">
                     {
