@@ -1,3 +1,4 @@
+import Experience from "@/components/Experience";
 import ProjectsCard from "@/components/ProjectsCard";
 import TechCard from "@/components/TechCard";
 import { Button } from "@/components/ui/button";
@@ -158,7 +159,7 @@ export default function Home() {
           ))}
         </section>
       </section>
-
+          <Experience/>
       <section className="projects py-8 mx-auto flex pb-8 flex-col gap-6">
         <div className="flex w-full items-center justify-between">
           <h2 className="title  inline text-2xl sm:text-3xl  font-[heading]  tracking-wide">
