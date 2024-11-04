@@ -5,7 +5,7 @@ import { Button } from './ui/button'
 
 const ProjectsCard = ({project}) => {
   return (
-    <div className="rounded-xl w-full border  border-zinc-800 bg-card text-card-foreground shadow flex flex-col">
+    <div className="rounded-xl w-full border border-zinc-200  dark:border-zinc-800 bg-card text-card-foreground shadow flex flex-col">
     <div className="flex flex-col space-y-1.5 p-6">
       <Link target='_blank' href={project.website || project.source}>
       <Image width={500} height={200}  alt='project image' src={project.image}/>
@@ -16,14 +16,14 @@ const ProjectsCard = ({project}) => {
         {project.title}
       </h3>
       <div className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-        <p className='text-justify  text-zinc-400'>
+        <p className='text-justify text-zinc-700 dark:text-zinc-400'>
           {project.description}
         </p>
       </div>
     </div>
     <div className="p-6 pt-0 flex h-full flex-col items-start justify-between gap-4">
       
-    <div className='flex flex-wrap gap-2'>{project.techStack.map((stack,idx)=><Button key={idx} >{stack}</Button>)}</div>
+    <div className='flex flex-wrap gap-2'>{project.techStack.map((stack,idx)=><Button variant="secondary" size="badge" key={idx} >{stack}</Button>)}</div>
       <div className="flex flex-row flex-wrap items-start gap-2">
 
 
@@ -31,7 +31,7 @@ const ProjectsCard = ({project}) => {
           target="_blank"
           href={project.source}
         >
-          <Button ><svg
+          <Button size="sm" ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -54,7 +54,7 @@ const ProjectsCard = ({project}) => {
           target="_blank"
           href={project.website}
         >
-          <Button >
+          <Button  size="sm">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-globe size-3"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
             Website</Button>
 

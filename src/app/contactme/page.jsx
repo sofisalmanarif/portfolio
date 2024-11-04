@@ -1,5 +1,7 @@
 'use client'
 import Toast from "@/components/Toast";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -42,41 +44,41 @@ const Page = () => {
 
   }
   return (
-    <section className="py-8 min-h-[70vh] flex flex-col gap-6">
+    <section className="py-8 min-h-[65vh] flex flex-col gap-6">
       {showToast && <Toast/>}
       
       <div className="felx items-center justify-between">
         <h2 className="title text-5xl  font-[heading]  tracking-wide">
           Contact me.
         </h2>
-        <form action="" onSubmit={submitHandler} className="flex flex-col gap-4 mt-5">
-          <div className="grid grid-cols-2 space-x-4">
-            <input
+        <form action="" onSubmit={submitHandler} className="flex sm:p-4  flex-col gap-4 mt-5">
+          <div className="grid grid-cols-1 space-y-4 sm:grid-cols-2 sm:space-y-0 sm:space-x-3 ">
+            <Input
               type="text"
               placeholder="Name"
               value={name}
               onChange={e=>setName(e.target.value)}
-              className="input rounded-lg input-bordered w-full "
+              
             />
 
-            <input
-              type="text"
+            <Input
+              type="email"
               placeholder="Email"
               value={email}
               onChange={e=>setEmail(e.target.value)}
-              className="input rounded-lg input-bordered w-ful"
+             
             />
           </div>
           <div>
             <textarea
             value={message}
             onChange={e=>setMessage(e.target.value)}
-              className="textarea h-24 w-full rounded-lg textarea-bordered"
+              className="textarea h-24 w-full flex  rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
               placeholder="Leave feedback about the site, career opportunities or just to say hello etc."
             ></textarea>
           </div>
 
-          <button type="submit" className="btn rounded-lg btn-neutral">
+          <Button type="submit" >
             {loading?"Sending...":<>Send Message <svg
               width="15"
               height="15"
@@ -94,7 +96,7 @@ const Page = () => {
             </svg></>
            
             }
-          </button>
+          </Button>
           <p className="mt-4 text-xs text-muted-foreground">By submitting this form, I agree to the <Link className=" font-semibold" href="/privacy">privacy&nbsp;policy.</Link></p>
         </form>
       </div>

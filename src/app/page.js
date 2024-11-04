@@ -18,11 +18,11 @@ export default function Home() {
           <h1 className="title text-[40px] sm:text-5xl mt-8 font-[heading] tracking-tight sm:tracking-wide">
             hi Salman here 👋
           </h1>
-          <p className="font-light mt-4 text-zinc-400">
+          <p className="font-light mt-4 text-zinc-700 dark:text-zinc-400">
             20-year-old software developer from India 🇮🇳
           </p>
-          <p className="font-light mt-4  text-zinc-400">
-          I&apos;m a <span className="hover:text-white font-semibold ease-in-out duration-500 cursor-pointer">full-stack developer </span>who turns caffeine into code and solves problems <span className="hover:text-white font-semibold ease-in-out duration-500 cursor-pointer">one line at a time!</span>
+          <p className="font-light mt-4 text-zinc-700  dark:text-zinc-400">
+          I&apos;m a <span className="dark:hover:text-white font-semibold ease-in-out hover:text-black duration-500 cursor-pointer">full-stack developer </span>who turns caffeine into code and solves problems <span className="dark:hover:text-white hover:text-black font-semibold ease-in-out duration-500 cursor-pointer">one line at a time!</span>
           </p>
          
           <div className="mt-4 flex items-end gap-1"><p className="font-semibold">Ask the chatbot anything about me</p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-arrow-down-right size-5 animate-bounce"><path d="m7 7 10 10"></path><path d="M17 7v10H7"></path></svg></div>
@@ -146,7 +146,7 @@ export default function Home() {
           
 
         </h2>
-        <p className="font-light  mt-2 mb-6 text-zinc-400">
+        <p className="font-light  mt-2 mb-6 text-zinc-700 dark:text-zinc-400">
           I&apos;m proficient in a range of modern technologies that empower me to
           build highly functional solutions.
           <br />
